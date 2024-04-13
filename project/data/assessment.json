@@ -1,0 +1,58 @@
+[
+  {
+    "cardId": 1,
+    "cardType": "assessment",
+    "cardCategory": "Who is assessed",
+    "cardName": "Student",
+    "cardDescription": "A student is assessed individually",
+    "cardDetails": "The student will be assess either on an independent work or on their contribution in a group assignment. "
+  },
+  {
+    "cardId": 2,
+    "cardType": "assessment",
+    "cardCategory": "Who is assessed",
+    "cardName": "Student pair",
+    "cardDescription": "Two students work together on an assignment or task.",
+    "cardDetails": "Students can be grouped by own choice, by chance, or by teacher based on their skills and personal characteristics"
+  },
+  {
+    "cardId": 3,
+    "cardType": "assessment",
+    "cardCategory": "Who is assessed",
+    "cardName": "Student group",
+    "cardDescription": "Three or more students work together on an assignment or project.",
+    "cardDetails": "Students can be grouped by own choice, by chance, or by teacher based on their skills and personal characteristics"
+  },
+  {
+    "cardId": 4,
+    "cardType": "assessment",
+    "cardCategory": "Who is assessed",
+    "cardName": "Student group from different study programme/Inter-disciplinary student group",
+    "cardDescription": "Student group from different discipline.\nprogramme, put\ntogether in a group. ",
+    "cardDetails": "Three or more student from different disciplines, out together in a group."
+  },
+  {
+    "cardId": 5,
+    "cardType": "assessment",
+    "cardCategory": "The assessor",
+    "cardName": "Teacher",
+    "cardDescription": "Assess the work of a student or student group",
+    "cardDetails": "Has good knowledge about the course curriculum and learning outcomes."
+  },
+  {
+    "cardId": 6,
+    "cardType": "assessment",
+    "cardCategory": "The assessor",
+    "cardName": "Lecturer from different field",
+    "cardDescription": "Has a different professional background than the students and/or teacher. ",
+    "cardDetails": "Can assess parts of the artefact they have expertize in."
+  },
+  {
+    "cardId": 7,
+    "cardType": "assessment",
+    "cardCategory": "The assessor",
+    "cardName": "Teaching assistant from different discipline",
+    "cardDescription": "Student with different professional or academic background than the students and/or the teacher.",
+    "cardDetails": "Reduces time and resources spent by teacher. Can use criteria made by the teacher. "
+  }
+]

@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "0dcd9977-4152-45de-a444-dd566cf307fc",
+		"name": "SUPER Assessor API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25773952"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/users/65f6ff2c36e1cad16cebc4fa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"users",
+								"65f6ff2c36e1cad16cebc4fa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"firstName\": \"Hannah\", \"lastName\": \"Eriksen\", \"email\": \"hannah@example.com\", \"department\": \"Design\", \"university\": \"NTNU\", \"position\": \"student\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5005/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"firstName\": \"Sofie\", \"lastName\": \"Eriksen\", \"email\": \"sofie@example.com\", \"department\": \"Sports\", \"university\": \"NTNU\", \"position\": \"student\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5005/users/65f70122c7abbe93f0fca0a1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"users",
+								"65f70122c7abbe93f0fca0a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/users/65f70122c7abbe93f0fca0a1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"users",
+								"65f70122c7abbe93f0fca0a1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Missions",
+			"item": [
+				{
+					"name": "Delete a Mission",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions/65f4b23bc68ef526961c0de1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"65f4b23bc68ef526961c0de1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Mission",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cardId\": 1, \"cardType\": \"Mission\", \"cardName\": \"Innovation\", \"cardDescription\": \"To find and support new and innovative ways of assessing students.\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5005/missions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Missions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single Mission by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions/65f70149c7abbe93f0fca0a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"65f70149c7abbe93f0fca0a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Mission",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cardId\": 1, \"cardType\": \"Mission\", \"cardName\": \"Creative\", \"cardDescription\": \"To find and support new and creative ways of assessing students.\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5005/missions/65f70149c7abbe93f0fca0a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"65f70149c7abbe93f0fca0a4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assessments",
+			"item": [
+				{
+					"name": "Get All Assessments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single Assessment by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/65f7016ec7abbe93f0fca0a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"65f7016ec7abbe93f0fca0a6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Assessment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"cardId\":\n8,\n\"cardType\":\n\"assessment\",\n\"cardName\":\n\"Teacher pair\",\n\"cardDescription\":\n\"Two teachers work together on an assignment or task.\",\n\"cardDetails\":\n\"Teachers can be grouped by own choice, by chance, or by teacher based …\",\n\"cardCategory\":\n\"Who is assessed\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5005/assessments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update an Assessment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"cardId\":\n8,\n\"cardType\":\n\"assessment\",\n\"cardName\":\n\"Student pair\",\n\"cardDescription\":\n\"Two students work together on an assignment or task.\",\n\"cardDetails\":\n\"students can be grouped by own choice, by chance, or by teacher based …\",\n\"cardCategory\":\n\"Who is assessed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5005/assessments/65f7016ec7abbe93f0fca0a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"65f7016ec7abbe93f0fca0a6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Assessment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/65f7016ec7abbe93f0fca0a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"65f7016ec7abbe93f0fca0a6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search Assessment Random 1 Excluding 6 and 7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/search?cardType=assessment&cardCategory=The+assessor&random=1&exclude=[6,7]",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"search"
+							],
+							"query": [
+								{
+									"key": "cardType",
+									"value": "assessment"
+								},
+								{
+									"key": "cardCategory",
+									"value": "The+assessor"
+								},
+								{
+									"key": "random",
+									"value": "1"
+								},
+								{
+									"key": "exclude",
+									"value": "[6,7]"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Assessment by Card Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/search?cardType=assessment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"search"
+							],
+							"query": [
+								{
+									"key": "cardType",
+									"value": "assessment"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Assessment by Card Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/search?cardCategory=The+assessor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"search"
+							],
+							"query": [
+								{
+									"key": "cardCategory",
+									"value": "The+assessor"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Assessment Random 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/search?random=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"search"
+							],
+							"query": [
+								{
+									"key": "random",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Assessment excluding 1 and 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/assessments/search?exclude=1,3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"assessments",
+								"search"
+							],
+							"query": [
+								{
+									"key": "exclude",
+									"value": "1,3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Mission by Card Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions/search?cardType=Mission",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"search"
+							],
+							"query": [
+								{
+									"key": "cardType",
+									"value": "Mission"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Mission by Card Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions/search?cardName=Innovation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"search"
+							],
+							"query": [
+								{
+									"key": "cardName",
+									"value": "Innovation"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Mission Random 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions/search?random=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"search"
+							],
+							"query": [
+								{
+									"key": "random",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Mission Excluding 89 and 90",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5005/missions/search?exclude=89,90",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"missions",
+								"search"
+							],
+							"query": [
+								{
+									"key": "exclude",
+									"value": "89,90"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Mission Random 3 Excluding 87,91,92",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Uploads",
+			"item": [
+				{
+					"name": "Upload Icon to Assessment Card by ID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
